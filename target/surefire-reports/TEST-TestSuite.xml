@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="17.427" tests="2" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_25\jre\bin"/>
+    <property name="java.vm.version" value="25.25-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\santhosh\git\android"/>
+    <property name="java.runtime.version" value="1.8.0_25-b18"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_25\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\santhosh\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\maven3.2.3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_25\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\oracle;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\EgisTec\MyWinLocker 3\x86;C:\Program Files (x86)\EgisTec\MyWinLocker 3\x64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files\Java\jdk1.8.0_25\bin;C:\Program Files\Java\jdk1.8.0_25;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\Skype\Phone\;C:\maven3.2.3\bin;C:\Program Files\Mercurial;C:\Program Files (x86)\proXPN\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Android\android-sdk\platform-tools;C:\Program Files (x86)\Android\android-sdk\tools;C:\Program Files\nodejs\;C:\Program Files (x86)\Appium\node_modules\.bin;C:\maven3.2.3\bin;C:\Program Files\Mercurial;C:\Program Files (x86)\proXPN\bin;C:\Users\santhosh\AppData\Roaming\npm;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\santhosh"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="santhosh"/>
+    <property name="java.class.path" value="C:\maven3.2.3\boot\plexus-classworlds-2.5.1.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_25\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_25"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_25\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_25\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_25\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\maven3.2.3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="testmethodLogin" classname="com.appium.san.ajio.androidajio.TestLogin" time="17.427">
+    <failure message="An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 6.74 seconds&#10;Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;&#10;System info: host: &apos;santhosh-PC&apos;, ip: &apos;169.254.114.64&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities [{app=C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk, appPackage=com.ril.ajio, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=50a44df8, platform=LINUX, appActivity=SplashScreenActivity, desired={app=C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk, appPackage=com.ril.ajio, appActivity=SplashScreenActivity, newCommandTimeout=30, platformVersion=5.1, automationName=Appium, platformName=Android, deviceName=192.168.0.5:5555}, newCommandTimeout=30, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]&#10;Session ID: 4e30f53f-c3fd-47a3-820d-762f8a4ac7f1" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6.74 seconds
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'santhosh-PC', ip: '169.254.114.64', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk, appPackage=com.ril.ajio, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=50a44df8, platform=LINUX, appActivity=SplashScreenActivity, desired={app=C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk, appPackage=com.ril.ajio, appActivity=SplashScreenActivity, newCommandTimeout=30, platformVersion=5.1, automationName=Appium, platformName=Android, deviceName=192.168.0.5:5555}, newCommandTimeout=30, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 4e30f53f-c3fd-47a3-820d-762f8a4ac7f1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:326)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:44)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:121)
+	at com.appium.san.ajio.androidajio.components.Components.login(Components.java:19)
+	at com.appium.san.ajio.androidajio.TestLogin.testmethodLogin(TestLogin.java:16)
+</failure>
+    <system-out><![CDATA[test
+]]></system-out>
+  </testcase>
+  <testcase name="testmethodLogin" classname="com.appium.san.ajio.androidajio.TestLogin" time="22.666">
+    <failure message="An unknown server-side error occurred while processing the command. (Original error: Soft keyboard not present, cannot hide keyboard) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 97 milliseconds&#10;Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;&#10;System info: host: &apos;santhosh-PC&apos;, ip: &apos;169.254.114.64&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities [{app=C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk, appPackage=com.ril.ajio, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=50a44df8, platform=LINUX, appActivity=SplashScreenActivity, desired={app=C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk, appPackage=com.ril.ajio, appActivity=SplashScreenActivity, newCommandTimeout=30, platformVersion=5.1, automationName=Appium, platformName=Android, deviceName=50a44df8}, newCommandTimeout=30, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]&#10;Session ID: 98428cf6-ab84-4f49-aa09-a35622f87fd8" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (Original error: Soft keyboard not present, cannot hide keyboard) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 97 milliseconds
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'santhosh-PC', ip: '169.254.114.64', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk, appPackage=com.ril.ajio, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=50a44df8, platform=LINUX, appActivity=SplashScreenActivity, desired={app=C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk, appPackage=com.ril.ajio, appActivity=SplashScreenActivity, newCommandTimeout=30, platformVersion=5.1, automationName=Appium, platformName=Android, deviceName=50a44df8}, newCommandTimeout=30, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 98428cf6-ab84-4f49-aa09-a35622f87fd8
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:206)
+	at io.appium.java_client.AppiumDriver.hideKeyboard(AppiumDriver.java:278)
+	at com.appium.san.ajio.androidajio.components.Components.login(Components.java:32)
+	at com.appium.san.ajio.androidajio.TestLogin.testmethodLogin(TestLogin.java:16)
+</failure>
+    <system-out><![CDATA[test
+]]></system-out>
+  </testcase>
+</testsuite>

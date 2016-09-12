@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Smoke]" parallel="classes">
+  <parameter name="platform_version" value="5.1"/>
+  <parameter name="port" value="4727"/>
+  <parameter name="platform_name" value="Android Emulator"/>
+  <parameter name="device" value="50a44df8"/>
+  <test name="Emulator-1(failed)" parallel="classes">
+    <parameter name="platform_version" value="5.1"/>
+    <parameter name="port" value="4726"/>
+    <parameter name="platform_name" value="Android Emulator"/>
+    <parameter name="device" value="192.168.0.5:5555"/>
+    <classes>
+      <class name="com.appium.san.ajio.androidajio.TestLogin">
+        <methods>
+          <include name="testmethodLogin"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.appium.san.ajio.androidajio.TestLogin -->
+    </classes>
+  </test> <!-- Emulator-1(failed) -->
+  <test name="Emulator-2(failed)" parallel="classes">
+    <parameter name="platform_version" value="5.1"/>
+    <parameter name="port" value="4727"/>
+    <parameter name="platform_name" value="Android Emulator"/>
+    <parameter name="device" value="50a44df8"/>
+    <classes>
+      <class name="com.appium.san.ajio.androidajio.TestLogin">
+        <methods>
+          <include name="testmethodLogin"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.appium.san.ajio.androidajio.TestLogin -->
+    </classes>
+  </test> <!-- Emulator-2(failed) -->
+</suite> <!-- Failed suite [Smoke] -->

@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>TestNG:  Emulator-2</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Emulator-2</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Sep 10 12:37:58 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>40 seconds (40654 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.TestLogin.testmethodLogin()'><b>testmethodLogin</b><br>Test class: com.appium.san.ajio.androidajio.TestLogin</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (Original error: Soft keyboard not present, cannot hide keyboard) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 97 milliseconds
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
+System info: host: &apos;santhosh-PC&apos;, ip: &apos;169.254.114.64&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk, appPackage=com.ril.ajio, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=50a44df8, platform=LINUX, appActivity=SplashScreenActivity, desired={app=C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk, appPackage=com.ril.ajio, appActivity=SplashScreenActivity, newCommandTimeout=30, platformVersion=5.1, automationName=Appium, platformName=Android, deviceName=50a44df8}, newCommandTimeout=30, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 98428cf6-ab84-4f49-aa09-a35622f87fd8
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:206)
+	at io.appium.java_client.AppiumDriver.hideKeyboard(AppiumDriver.java:278)
+	at com.appium.san.ajio.androidajio.components.Components.login(Components.java:32)
+	at com.appium.san.ajio.androidajio.TestLogin.testmethodLogin(TestLogin.java:16)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace344502368", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace344502368'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (Original error: Soft keyboard not present, cannot hide keyboard) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 97 milliseconds
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
+System info: host: &apos;santhosh-PC&apos;, ip: &apos;169.254.114.64&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk, appPackage=com.ril.ajio, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=50a44df8, platform=LINUX, appActivity=SplashScreenActivity, desired={app=C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk, appPackage=com.ril.ajio, appActivity=SplashScreenActivity, newCommandTimeout=30, platformVersion=5.1, automationName=Appium, platformName=Android, deviceName=50a44df8}, newCommandTimeout=30, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 98428cf6-ab84-4f49-aa09-a35622f87fd8
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:206)
+	at io.appium.java_client.AppiumDriver.hideKeyboard(AppiumDriver.java:278)
+	at com.appium.san.ajio.androidajio.components.Components.login(Components.java:32)
+	at com.appium.san.ajio.androidajio.TestLogin.testmethodLogin(TestLogin.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>22</td>
+<td>com.appium.san.ajio.androidajio.TestLogin@36f6e879</td></tr>
+</table><p>
+</body>
+</html>

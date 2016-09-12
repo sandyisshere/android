@@ -36,8 +36,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Smoke">
+              <span class="suite-name border-failed">Smoke</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -47,37 +47,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\santhosh.baby\AppData\Local\Temp\testng-eclipse--1531988199\testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Smoke">
+                    <span>C:\Users\santhosh\git\android\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" class="navigator-link " panel-name="testlist-Smoke">
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="group-Smoke">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-Smoke">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-Smoke">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Smoke">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-Smoke">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -90,21 +90,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods, 1 failed,  1 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
                     <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Smoke" class="hide-methods failed suite-Smoke"> (hide)</a> <!-- hide-methods failed suite-Smoke -->
+                      <a href="#" panel-name="suite-Smoke" class="show-methods failed suite-Smoke"> (show)</a> <!-- show-methods failed suite-Smoke -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content failed suite-Smoke">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.appium.san.ajio.androidajio.fblogin" hash-for-method="testlogin">testlogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke" title="com.appium.san.ajio.androidajio.TestLogin" hash-for-method="testmethodLogin">testmethodLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-Smoke -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Smoke" class="hide-methods skipped suite-Smoke"> (hide)</a> <!-- hide-methods skipped suite-Smoke -->
+                      <a href="#" panel-name="suite-Smoke" class="show-methods skipped suite-Smoke"> (show)</a> <!-- show-methods skipped suite-Smoke -->
+                    </span>
+                    <div class="method-list-content skipped suite-Smoke">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke" title="com.appium.san.ajio.androidajio.TestLogin" hash-for-method="testmethodLogin">testmethodLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Smoke -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -115,31 +129,27 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+        <div panel-name="suite-Smoke" class="panel Smoke">
+          <div class="suite-Smoke-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.appium.san.ajio.androidajio.fblogin</span>
+              <span class="class-name">com.appium.san.ajio.androidajio.TestLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testlogin">
-                  </a> <!-- testlogin -->
-                  <span class="method-name">testlogin</span>
+                  <a name="testmethodLogin">
+                  </a> <!-- testmethodLogin -->
+                  <span class="method-name">testmethodLogin</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 81.60 seconds
+Command duration or timeout: 10.75 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
-System info: host: &apos;LT0062160&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+System info: host: &apos;santhosh-PC&apos;, ip: &apos;169.254.114.64&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=D:\Software\facebook.apk, appPackage=com.facebook.katana, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=emulator-5554, platform=LINUX, appActivity=LoginActivity, desired={app=D:\Software\facebook.apk, appPackage=com.facebook.katana, appActivity=LoginActivity, newCommandTimeout=30, platformVersion=5.1, automationName=Appium, platformName=Android, deviceName=Android Emulator}, newCommandTimeout=30, platformVersion=5.1, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: c30df4ad-ab1d-4175-9801-d9d41d51b534
-*** Element info: {Using=-android uiautomator, value=new UiSelector().resourceId(&quot;com.facebook.katana:id/login_username&quot;)}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+Capabilities [{app=C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk, appPackage=com.ril.ajio, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=98857538485134424f, platform=LINUX, appActivity=SplashScreenActivity, desired={app=C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk, appPackage=com.ril.ajio, appActivity=SplashScreenActivity, newCommandTimeout=30, platformVersion=5.1, automationName=Appium, platformName=Android, deviceName=50a44df8}, newCommandTimeout=30, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 2e833804-da3d-4810-bc47-bb30d5ef9a51
+*** Element info: {Using=-android uiautomator, value=new UiSelector().resourceId(&quot;com.ril.ajio:id/txt_password&quot;)}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
@@ -148,131 +158,165 @@ Session ID: c30df4ad-ab1d-4175-9801-d9d41d51b534
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
 	at io.appium.java_client.android.AndroidDriver.findElementByAndroidUIAutomator(AndroidDriver.java:394)
-	at com.appium.san.ajio.androidajio.fblogin.testlogin(fblogin.java:53)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:773)
-	at org.testng.TestRunner.run(TestRunner.java:623)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
-	at org.testng.TestNG.run(TestNG.java:1018)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-
+	at com.appium.san.ajio.androidajio.components.Components.login(Components.java:25)
+	at com.appium.san.ajio.androidajio.TestLogin.testmethodLogin(TestLogin.java:16)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Smoke-class-failed -->
+          <div class="suite-Smoke-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.appium.san.ajio.androidajio.TestLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testmethodLogin">
+                  </a> <!-- testmethodLogin -->
+                  <span class="method-name">testmethodLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke-class-skipped -->
+        </div> <!-- panel Smoke -->
+        <div panel-name="test-xml-Smoke" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\santhosh.baby\AppData\Local\Temp\testng-eclipse--1531988199\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\santhosh\git\android\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite name=&quot;Smoke&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;Emulator-1&quot;&gt;
+    &lt;parameter name=&quot;platform_version&quot; value=&quot;5.1&quot;/&gt;
+    &lt;parameter name=&quot;port&quot; value=&quot;4726&quot;/&gt;
+    &lt;parameter name=&quot;platform_name&quot; value=&quot;Android Emulator&quot;/&gt;
+    &lt;parameter name=&quot;device&quot; value=&quot;98857538485134424f&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.appium.san.ajio.androidajio.fblogin&quot;/&gt;
+      &lt;class name=&quot;com.appium.san.ajio.androidajio.TestLogin&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Emulator-1 --&gt;
+  &lt;test name=&quot;Emulator-2&quot;&gt;
+    &lt;parameter name=&quot;platform_version&quot; value=&quot;5.1&quot;/&gt;
+    &lt;parameter name=&quot;port&quot; value=&quot;4727&quot;/&gt;
+    &lt;parameter name=&quot;platform_name&quot; value=&quot;Android Emulator&quot;/&gt;
+    &lt;parameter name=&quot;device&quot; value=&quot;50a44df8&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.appium.san.ajio.androidajio.TestLogin&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Emulator-2 --&gt;
+&lt;/suite&gt; &lt;!-- Smoke --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Smoke" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Smoke</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Emulator-1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Emulator-2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Smoke" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Smoke</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Smoke" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Smoke</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Smoke');
+function tableData_Smoke() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testlogin')
-data.setCell(0, 2, 'com.appium.san.ajio.androidajio.fblogin')
-data.setCell(0, 3, 171239);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'testmethodLogin')
+data.setCell(0, 2, 'com.appium.san.ajio.androidajio.TestLogin')
+data.setCell(0, 3, 23120);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testmethodLogin')
+data.setCell(1, 2, 'com.appium.san.ajio.androidajio.TestLogin')
+data.setCell(1, 3, 1);
+window.suiteTableData['Smoke']= { tableData: data, tableDiv: 'times-div-Smoke'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <div id="times-div-Smoke">
+              </div> <!-- times-div-Smoke -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Smoke" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Smoke</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Smoke" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Smoke" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.appium.san.ajio.androidajio.fblogin</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.appium.san.ajio.androidajio.TestLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp(4726, 98857538485134424f, Android Emulator, 5.1)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(4727, 50a44df8, Android Emulator, 5.1)</span>
+                <span class="method-start">45 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">testmethodLogin</span>
+                <span class="method-start">16363 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testlogin</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">testmethodLogin</span>
+                <span class="method-start">23353 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">46476 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

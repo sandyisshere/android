@@ -9,6 +9,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
@@ -41,24 +42,34 @@ public class fblogin {
 
 		capabilities.setCapability("deviceName", "Android Emulator");
 
-		capabilities.setCapability("app", "D:\\Software\\facebook.apk");
+		capabilities.setCapability("app", "C:\\Users\\santhosh\\Downloads\\SHAREit\\SM-G935F\\app\\AJIO.apk");
 		capabilities.setCapability("newCommandTimeout", "30");
 
-		capabilities.setCapability("appPackage", "com.facebook.katana");
+		capabilities.setCapability("appPackage", "com.ril.ajio");
 
-		capabilities.setCapability("appActivity", "LoginActivity");
+		capabilities.setCapability("appActivity", "SplashScreenActivity");
 
 		AndroidDriver driver = new AndroidDriver(new URL(appiumServiceUrl),
 				capabilities);
-		driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
-		driver.findElementByAndroidUIAutomator(
-				"new UiSelector().resourceId(\"com.facebook.katana:id/login_username\")")
-				.sendKeys("santosh.baby@gmail.com");
-		driver.findElementByAndroidUIAutomator(
-				"new UiSelector().resourceId(\"com.facebook.katana:id/login_password\")")
-				.sendKeys("santosh.baby@gmail.com");
 
-		Thread.sleep(7000);
+		driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+		
+		driver.findElement(By.id("com.ril.ajio:id/txt_email")).sendKeys("santhoshooo.baby@ril.com");
+
+//		driver.findElementByAndroidUIAutomator(
+//				"new UiSelector().resourceId(\"com.ril.ajio:id/txt_email\")")
+//				.sendKeys("santhosh.baby@ril.com");
+		driver.hideKeyboard();
+
+		driver.findElementByAndroidUIAutomator(
+				"new UiSelector().resourceId(\"com.ril.ajio:id/txt_password\")")
+				.sendKeys("test@321");
+		driver.hideKeyboard();
+
+		driver.findElementByAndroidUIAutomator(
+				"new UiSelector().resourceId(\"com.ril.ajio:id/login_button\")").click();
+		driver.hideKeyboard();
+
 	}
 
 	@AfterTest

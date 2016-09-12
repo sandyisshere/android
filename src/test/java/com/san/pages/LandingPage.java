@@ -28,7 +28,7 @@ public class LandingPage extends AbstractPage {
 
 		// Return ComponentListPage
 
-		PageFactory.initElements(new AppiumFieldDecorator(driver), new ComponentListPage());
+		PageFactory.initElements(new AppiumFieldDecorator(driver), new HomePage());
 
 	}
 

@@ -1,0 +1,10 @@
+com\san\pages\HomePage.class
+com\san\utility\AbstractTest.class
+com\appium\san\ajio\androidajio\AppTest.class
+com\appium\san\ajio\androidajio\components\Components.class
+com\appium\san\ajio\androidajio\TestLogin.class
+com\san\test\FirstButtonTest.class
+com\san\pages\LandingPage.class
+com\san\utility\AbstractPage.class
+com\appium\san\ajio\androidajio\fblogin.class
+com\san\pages\LoginPage.class

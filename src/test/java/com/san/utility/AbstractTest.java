@@ -1,5 +1,6 @@
 package com.san.utility;
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -13,53 +14,61 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import com.san.pages.LandingPage;
+import com.san.pages.LoginPage;
 
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 public class AbstractTest {
 
-	public static IOSDriver driver;
+	public static AndroidDriver driver;
+	public static AppiumServiceBuilder appiumService;
 
 	@BeforeClass
 	public static void createEnvironment() throws Exception {
 
 		// DesiredCapabilities
 
-		startAppiumonMac();
+		//startAndroid();
+
+		String Appium_Node_Path = "C:\\Program Files (x86)\\Appium\\node.exe";
+		String Appium_JS_Path = "C:\\Program Files (x86)\\Appium\\node_modules\\appium\\bin\\appium.js";
+
+		appiumService = new AppiumServiceBuilder().usingAnyFreePort()
+				.usingDriverExecutable(new File(Appium_Node_Path))
+				.withAppiumJS(new File(Appium_JS_Path));
+		appiumService.build().start();
+
+		String appiumServiceUrl = appiumService.build().getUrl().toString();
 
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
-		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
+		capabilities.setCapability("automationName", "Appium");
 
-		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS");
+		capabilities.setCapability("platformName", "Android");
 
-		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.1");
+		capabilities.setCapability("platformVersion", "5.1");
 
-		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Srikanth Vejendla's iPhone");
+		capabilities.setCapability("deviceName", "Android Emulator");
 
-		capabilities.setCapability("udid", "5e66e1067a0afea89be55a2d06322a98344023bb");
+		capabilities.setCapability("app", "C:\\Users\\santhosh\\Downloads\\SHAREit\\SM-G935F\\app\\AJIO.apk");
+		capabilities.setCapability("newCommandTimeout", "30");
 
-		capabilities.setCapability("app", "/Users/srikanthvejendla/Desktop/UiCatalog.app");
+		capabilities.setCapability("appPackage", "com.ril.ajio");
 
-		// capabilities.setCapability("bundleId","com.example.apple-samplecode.UICatalog");
+		capabilities.setCapability("appActivity", "SplashScreenActivity");
 
-		try {
+		AndroidDriver driver = new AndroidDriver(new URL(appiumServiceUrl),
+				capabilities);
 
-			driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
-		} catch (MalformedURLException e) {
+		driver.manage().timeouts().implicitlyWait(70, TimeUnit.SECONDS);
 
-			// TODO Auto-generated catch block
-
-			e.printStackTrace();
-
-		}
-		
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-		PageFactory.initElements(new AppiumFieldDecorator(driver), new LandingPage());
+		PageFactory.initElements(new AppiumFieldDecorator(driver),
+				new LoginPage());
 
 	}
 
@@ -70,15 +79,18 @@ public class AbstractTest {
 
 	}
 
-	public static void startAppiumonMac() throws Exception {
+	public static void startAndroid() throws Exception {
 
 		// node appium
 
 		// node appium.js
 
-		CommandLine command = new CommandLine("/Applications/Appium.app/Contents/Resources/node/bin/node");
+		CommandLine command = new CommandLine(
+				"C:\\Program Files (x86)\\Appium\\node.exe");
 
-		command.addArgument("/Applications/Appium.app/Contents/Resources/node_modules/appium/bin/appium.js", false);
+		command.addArgument(
+				"C:\\Program Files (x86)\\Appium\\node_modules\\appium\\bin\\appium.js",
+				false);
 
 		command.addArgument("--address", false);
 
