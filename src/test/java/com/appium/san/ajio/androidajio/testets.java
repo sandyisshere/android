@@ -1,4 +1,4 @@
-package com.mrmoin.appium;
+/*package com.mrmoin.appium;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,7 +24,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-/**
+*//**
  * 
  * @author Khaja
  *
@@ -40,7 +40,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
  *         192.168.0.20:5555 --nodeconfig
  *         /Users/Khaja/Documents/jars/node_config_3.json
  *
- */
+ *//*
 public class dsa {
 
 	String port = "";
@@ -94,7 +94,7 @@ public class dsa {
 
 //		driver.findElement(By.id("com.ril.ajio:id/txt_email")).sendKeys(			"santhosh.baby@ril.com");
 
-		/*// driver.findElementByAndroidUIAutomator(
+		// driver.findElementByAndroidUIAutomator(
 		// "new UiSelector().resourceId(\"com.ril.ajio:id/txt_email\")")
 		// .sendKeys("santhosh.baby@ril.com");
 
@@ -106,9 +106,9 @@ public class dsa {
 		driver.findElementByAndroidUIAutomator(
 				"new UiSelector().resourceId(\"com.ril.ajio:id/login_button\")")
 				.click();
-		driver.hideKeyboard();*/
+		driver.hideKeyboard();
 
-		/*
+		
 		 * driver.findElementById("io.selendroid.testapp:id/my_text_field").sendKeys
 		 * ("Hello World!");
 		 * 
@@ -116,7 +116,7 @@ public class dsa {
 		 * driver).getScreenshotAs(OutputType.FILE);
 		 * FileUtils.copyFileToDirectory(file, new
 		 * File("/Users/Khaja/Documents/workspace/ParallelTests/screens"));
-		 */
+		 
 	}
 
 	@AfterClass
@@ -243,3 +243,4 @@ java -jar D:\softwares\selenium-server-standalone-2.53.1.jar -role hub ttp://127
         </classes>
     </test>
 </suite>
+*/
