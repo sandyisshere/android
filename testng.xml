@@ -15,7 +15,7 @@
 			<class name="com.appium.san.ajio.androidajio.TestLogin" />
 
 		</classes>
-	</test>
+	</test><!-- 
 	<test name="Emulator-2">
 		<parameter name="port" value="4727"></parameter>
 		<parameter name="mobilename" value="A0001"></parameter>
@@ -30,7 +30,7 @@
 			<class name="com.appium.san.ajio.androidajio.TestLogin" />
 		</classes>
 	</test>
-
+ -->
 
 
 	<!-- <test name="Real-Device-1"> <classes> <class name="com.mrmoin.appium.AppiumParallelTests"> 

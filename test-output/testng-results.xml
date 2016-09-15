@@ -1,46 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" total="2" passed="0">
+<testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Smoke" duration-ms="47395" started-at="2016-09-10T07:50:32Z" finished-at="2016-09-10T07:51:19Z">
+  <suite name="Smoke" duration-ms="11682" started-at="2016-09-12T16:49:27Z" finished-at="2016-09-12T16:49:38Z">
     <groups>
     </groups>
-    <test name="Emulator-2" duration-ms="16324" started-at="2016-09-10T07:50:32Z" finished-at="2016-09-10T07:50:48Z">
+    <test name="Emulator-1" duration-ms="11682" started-at="2016-09-12T16:49:27Z" finished-at="2016-09-12T16:49:38Z">
       <class name="com.appium.san.ajio.androidajio.TestLogin">
-        <test-method status="FAIL" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.appium.san.ajio.androidajio.TestLogin@7a5d012c]" name="setUp" is-config="true" duration-ms="0" started-at="2016-09-10T13:20:32Z" finished-at="2016-09-10T13:20:32Z">
+        <test-method status="FAIL" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.appium.san.ajio.androidajio.TestLogin@50a7bc6e]" name="setUp" is-config="true" duration-ms="0" started-at="2016-09-12T22:19:27Z" finished-at="2016-09-12T22:19:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[4727]]>
+                <![CDATA[4726]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[50a44df8]]>
+                <![CDATA[98857538485134424f]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Android Emulator]]>
+                <![CDATA[Android]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[5.1]]>
+                <![CDATA[6.0.1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[san]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[C:\\Users\\santhosh\\Downloads\\SHAREit\\SM-G935F\\app\\AJIO1.apk]]>
               </value>
             </param>
           </params>
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[A new session could not be created. (Original error: EPERM: operation not permitted, rename 'C:\Users\santhosh\AppData\Local\Temp\116810-5780-8b6q7d\appium.tmp' -> 'C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk') (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15.70 seconds
+              <![CDATA[A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.90 seconds
 Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
 System info: host: 'santhosh-PC', ip: '169.254.114.64', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
 Driver info: io.appium.java_client.android.AndroidDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: EPERM: operation not permitted, rename 'C:\Users\santhosh\AppData\Local\Temp\116810-5780-8b6q7d\appium.tmp' -> 'C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk') (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15.70 seconds
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.90 seconds
 Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
 System info: host: 'santhosh-PC', ip: '169.254.114.64', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
 Driver info: io.appium.java_client.android.AndroidDriver
@@ -61,7 +71,7 @@ Driver info: io.appium.java_client.android.AndroidDriver
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:161)
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:170)
 	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:82)
-	at com.san.appium.sandriver.TestBase.setUp(TestBase.java:59)
+	at com.san.appium.sandriver.TestBase.setUp(TestBase.java:63)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -86,108 +96,11 @@ Driver info: io.appium.java_client.android.AndroidDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="testmethodLogin()[pri:0, instance:com.appium.san.ajio.androidajio.TestLogin@7a5d012c]" name="testmethodLogin" duration-ms="1" started-at="2016-09-10T13:20:48Z" finished-at="2016-09-10T13:20:48Z">
+        <test-method status="SKIP" signature="testmethodLogin()[pri:0, instance:com.appium.san.ajio.androidajio.TestLogin@50a7bc6e]" name="testmethodLogin" duration-ms="1" started-at="2016-09-12T22:19:38Z" finished-at="2016-09-12T22:19:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testmethodLogin -->
-        <test-method status="SKIP" signature="teardown()[pri:0, instance:com.appium.san.ajio.androidajio.TestLogin@7a5d012c]" name="teardown" is-config="true" duration-ms="0" started-at="2016-09-10T13:20:48Z" finished-at="2016-09-10T13:20:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.appium.san.ajio.androidajio.TestLogin -->
-    </test> <!-- Emulator-2 -->
-    <test name="Emulator-1" duration-ms="47395" started-at="2016-09-10T07:50:32Z" finished-at="2016-09-10T07:51:19Z">
-      <class name="com.appium.san.ajio.androidajio.TestLogin">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.appium.san.ajio.androidajio.TestLogin@34ce8af7]" name="setUp" is-config="true" duration-ms="23352" started-at="2016-09-10T13:20:32Z" finished-at="2016-09-10T13:20:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[4726]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[98857538485134424f]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Android Emulator]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[5.1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testmethodLogin()[pri:0, instance:com.appium.san.ajio.androidajio.TestLogin@34ce8af7]" name="testmethodLogin" duration-ms="23120" started-at="2016-09-10T13:20:55Z" finished-at="2016-09-10T13:21:18Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.75 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'santhosh-PC', ip: '169.254.114.64', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk, appPackage=com.ril.ajio, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=98857538485134424f, platform=LINUX, appActivity=SplashScreenActivity, desired={app=C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk, appPackage=com.ril.ajio, appActivity=SplashScreenActivity, newCommandTimeout=30, platformVersion=5.1, automationName=Appium, platformName=Android, deviceName=50a44df8}, newCommandTimeout=30, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 2e833804-da3d-4810-bc47-bb30d5ef9a51
-*** Element info: {Using=-android uiautomator, value=new UiSelector().resourceId("com.ril.ajio:id/txt_password")}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.75 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'santhosh-PC', ip: '169.254.114.64', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk, appPackage=com.ril.ajio, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=98857538485134424f, platform=LINUX, appActivity=SplashScreenActivity, desired={app=C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk, appPackage=com.ril.ajio, appActivity=SplashScreenActivity, newCommandTimeout=30, platformVersion=5.1, automationName=Appium, platformName=Android, deviceName=50a44df8}, newCommandTimeout=30, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 2e833804-da3d-4810-bc47-bb30d5ef9a51
-*** Element info: {Using=-android uiautomator, value=new UiSelector().resourceId("com.ril.ajio:id/txt_password")}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at io.appium.java_client.android.AndroidDriver.findElementByAndroidUIAutomator(AndroidDriver.java:394)
-	at com.appium.san.ajio.androidajio.components.Components.login(Components.java:25)
-	at com.appium.san.ajio.androidajio.TestLogin.testmethodLogin(TestLogin.java:16)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testmethodLogin -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.appium.san.ajio.androidajio.TestLogin@34ce8af7]" name="teardown" is-config="true" duration-ms="913" started-at="2016-09-10T13:21:18Z" finished-at="2016-09-10T13:21:19Z">
+        <test-method status="SKIP" signature="teardown()[pri:0, instance:com.appium.san.ajio.androidajio.TestLogin@50a7bc6e]" name="teardown" is-config="true" duration-ms="0" started-at="2016-09-12T22:19:38Z" finished-at="2016-09-12T22:19:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

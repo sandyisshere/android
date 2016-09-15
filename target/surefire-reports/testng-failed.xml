@@ -1,42 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Smoke]" parallel="classes">
-  <parameter name="platform_version" value="5.1"/>
-  <parameter name="port" value="4727"/>
-  <parameter name="platform_name" value="Android Emulator"/>
-  <parameter name="device" value="50a44df8"/>
-  <test name="Emulator-1(failed)" parallel="classes">
-    <parameter name="platform_version" value="5.1"/>
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Smoke]" parallel="tests">
+  <parameter name="platform_version" value="6.0.1"/>
+  <parameter name="port" value="4726"/>
+  <parameter name="platform_name" value="Android"/>
+  <parameter name="device" value="98857538485134424f"/>
+  <parameter name="mobilename" value="san"/>
+  <parameter name="apk" value="C:\\Users\\santhosh\\Downloads\\SHAREit\\SM-G935F\\app\\AJIO1.apk"/>
+  <test name="Emulator-1(failed)" parallel="tests">
+    <parameter name="platform_version" value="6.0.1"/>
     <parameter name="port" value="4726"/>
-    <parameter name="platform_name" value="Android Emulator"/>
-    <parameter name="device" value="192.168.0.5:5555"/>
+    <parameter name="platform_name" value="Android"/>
+    <parameter name="device" value="98857538485134424f"/>
+    <parameter name="mobilename" value="san"/>
+    <parameter name="apk" value="C:\\Users\\santhosh\\Downloads\\SHAREit\\SM-G935F\\app\\AJIO1.apk"/>
     <classes>
       <class name="com.appium.san.ajio.androidajio.TestLogin">
         <methods>
           <include name="testmethodLogin"/>
           <include name="teardown"/>
-          <include name="teardown"/>
-          <include name="setUp"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.appium.san.ajio.androidajio.TestLogin -->
     </classes>
   </test> <!-- Emulator-1(failed) -->
-  <test name="Emulator-2(failed)" parallel="classes">
-    <parameter name="platform_version" value="5.1"/>
-    <parameter name="port" value="4727"/>
-    <parameter name="platform_name" value="Android Emulator"/>
-    <parameter name="device" value="50a44df8"/>
-    <classes>
-      <class name="com.appium.san.ajio.androidajio.TestLogin">
-        <methods>
-          <include name="testmethodLogin"/>
-          <include name="teardown"/>
-          <include name="teardown"/>
-          <include name="setUp"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.appium.san.ajio.androidajio.TestLogin -->
-    </classes>
-  </test> <!-- Emulator-2(failed) -->
 </suite> <!-- Failed suite [Smoke] -->

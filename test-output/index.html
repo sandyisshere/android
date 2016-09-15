@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Smoke">
-              <span class="suite-name border-failed">Smoke</span>
+              <span class="suite-name border-skipped">Smoke</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Smoke">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,21 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,  1 skipped,  </span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Smoke" class="hide-methods failed suite-Smoke"> (hide)</a> <!-- hide-methods failed suite-Smoke -->
-                      <a href="#" panel-name="suite-Smoke" class="show-methods failed suite-Smoke"> (show)</a> <!-- show-methods failed suite-Smoke -->
-                    </span>
-                    <div class="method-list-content failed suite-Smoke">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Smoke" title="com.appium.san.ajio.androidajio.TestLogin" hash-for-method="testmethodLogin">testmethodLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Smoke -->
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -130,46 +116,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Smoke" class="panel Smoke">
-          <div class="suite-Smoke-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.appium.san.ajio.androidajio.TestLogin</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testmethodLogin">
-                  </a> <!-- testmethodLogin -->
-                  <span class="method-name">testmethodLogin</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.75 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
-System info: host: &apos;santhosh-PC&apos;, ip: &apos;169.254.114.64&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk, appPackage=com.ril.ajio, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=98857538485134424f, platform=LINUX, appActivity=SplashScreenActivity, desired={app=C:\Users\santhosh\Downloads\SHAREit\SM-G935F\app\AJIO.apk, appPackage=com.ril.ajio, appActivity=SplashScreenActivity, newCommandTimeout=30, platformVersion=5.1, automationName=Appium, platformName=Android, deviceName=50a44df8}, newCommandTimeout=30, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 2e833804-da3d-4810-bc47-bb30d5ef9a51
-*** Element info: {Using=-android uiautomator, value=new UiSelector().resourceId(&quot;com.ril.ajio:id/txt_password&quot;)}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at io.appium.java_client.android.AndroidDriver.findElementByAndroidUIAutomator(AndroidDriver.java:394)
-	at com.appium.san.ajio.androidajio.components.Components.login(Components.java:25)
-	at com.appium.san.ajio.androidajio.TestLogin.testmethodLogin(TestLogin.java:16)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Smoke-class-failed -->
           <div class="suite-Smoke-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -196,23 +142,16 @@ Session ID: 2e833804-da3d-4810-bc47-bb30d5ef9a51
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Smoke&quot; parallel=&quot;tests&quot;&gt;
   &lt;test name=&quot;Emulator-1&quot;&gt;
-    &lt;parameter name=&quot;platform_version&quot; value=&quot;5.1&quot;/&gt;
+    &lt;parameter name=&quot;platform_version&quot; value=&quot;6.0.1&quot;/&gt;
     &lt;parameter name=&quot;port&quot; value=&quot;4726&quot;/&gt;
-    &lt;parameter name=&quot;platform_name&quot; value=&quot;Android Emulator&quot;/&gt;
+    &lt;parameter name=&quot;platform_name&quot; value=&quot;Android&quot;/&gt;
     &lt;parameter name=&quot;device&quot; value=&quot;98857538485134424f&quot;/&gt;
+    &lt;parameter name=&quot;mobilename&quot; value=&quot;san&quot;/&gt;
+    &lt;parameter name=&quot;apk&quot; value=&quot;C:\\Users\\santhosh\\Downloads\\SHAREit\\SM-G935F\\app\\AJIO1.apk&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.appium.san.ajio.androidajio.TestLogin&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Emulator-1 --&gt;
-  &lt;test name=&quot;Emulator-2&quot;&gt;
-    &lt;parameter name=&quot;platform_version&quot; value=&quot;5.1&quot;/&gt;
-    &lt;parameter name=&quot;port&quot; value=&quot;4727&quot;/&gt;
-    &lt;parameter name=&quot;platform_name&quot; value=&quot;Android Emulator&quot;/&gt;
-    &lt;parameter name=&quot;device&quot; value=&quot;50a44df8&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.appium.san.ajio.androidajio.TestLogin&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Emulator-2 --&gt;
 &lt;/suite&gt; &lt;!-- Smoke --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -225,9 +164,6 @@ Session ID: 2e833804-da3d-4810-bc47-bb30d5ef9a51
             <ul>
               <li>
                 <span class="test-name">Emulator-1 (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Emulator-2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -253,20 +189,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testmethodLogin')
 data.setCell(0, 2, 'com.appium.san.ajio.androidajio.TestLogin')
-data.setCell(0, 3, 23120);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testmethodLogin')
-data.setCell(1, 2, 'com.appium.san.ajio.androidajio.TestLogin')
-data.setCell(1, 3, 1);
+data.setCell(0, 3, 1);
 window.suiteTableData['Smoke']= { tableData: data, tableDiv: 'times-div-Smoke'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 1 ms</span>
               <div id="times-div-Smoke">
               </div> <!-- times-div-Smoke -->
             </div> <!-- times-div -->
@@ -294,29 +226,15 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.appium.san.ajio.androidajio.TestLogin</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setUp(4726, 98857538485134424f, Android Emulator, 5.1)</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(4726, 98857538485134424f, Android, 6.0.1, san, C:\\Users\\santhosh\\Downloads\\SHAREit\\SM-G935F\\ap...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">setUp(4727, 50a44df8, Android Emulator, 5.1)</span>
-                <span class="method-start">45 ms</span>
-              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testmethodLogin</span>
-                <span class="method-start">16363 ms</span>
+                <span class="method-start">11671 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testmethodLogin</span>
-                <span class="method-start">23353 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">46476 ms</span>
-              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

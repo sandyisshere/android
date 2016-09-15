@@ -1,5 +1,6 @@
 package com.san.appium.sandriver;
 
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
 import org.openqa.selenium.By;
@@ -7,11 +8,11 @@ import org.openqa.selenium.WebDriver;
 
 public class SelBase {
 
-	protected AndroidDriver driver;
-	protected WaitEvent we = null;
+	 public AndroidDriver<MobileElement> driver;
+     public WaitEvent we = null;
 
-	public SelBase() {
-		we = new WaitEvent(driver);
+	public SelBase( ) {
+		
 	}
 
 	public void setValue(By locator, String val, int durationSecs)
@@ -23,10 +24,11 @@ public class SelBase {
 			we.waitForElement(locator, durationSecs);
 		}
 		driver.findElement(locator).sendKeys(val);
+		
 		try {
 			driver.hideKeyboard();
 		} catch (Exception e) {
-
+System.out.println("faileeed to   perform hide keyword");
 		}
 	}
 

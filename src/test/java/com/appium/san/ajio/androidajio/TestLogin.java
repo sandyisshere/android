@@ -12,8 +12,8 @@ public class TestLogin extends TestBase{
 	public void testmethodLogin() throws Exception
 	{
 		System.out.println("test");
-		
 		Components comp = new Components(driver);
+		comp.navigatetologin();
 		comp.login();
 	}
 	
