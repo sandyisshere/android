@@ -1,36 +1,38 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Smoke" verbose="1" parallel="tests" thread-count="5">
 
-
-
+<!--  <listeners>
+        <listener class-name="com.appium.factory.BaseExtent"/>
+    </listeners>
+ -->
 	<test name="Emulator-1">
 		<parameter name="port" value="4726"></parameter>
 		<parameter name="device" value="98857538485134424f"></parameter>
 		<parameter name="mobilename" value="san"></parameter>
-		<parameter name="platform_name" value="Android"></parameter>
-		<parameter name="platform_version" value="6.0.1"></parameter>
+		<parameter name="platform_name" value="ANDROID"></parameter>
+		<parameter name="platform_version" value="6.0"></parameter>
 		<parameter name="apk"
-			value="C:\\Users\\santhosh\\Downloads\\SHAREit\\SM-G935F\\app\\AJIO1.apk"></parameter>
+			value="D:\\Android\\Ajio-Prod_1-2.apk"></parameter>
 		<classes>
 			<class name="com.appium.san.ajio.androidajio.TestLogin" />
-
 		</classes>
-	</test><!-- 
-	<test name="Emulator-2">
+	</test> 
+	
+	<!-- <test name="Emulator-2">
 		<parameter name="port" value="4727"></parameter>
-		<parameter name="mobilename" value="A0001"></parameter>
-		<parameter name="device" value="50a44df8"></parameter>
+		<parameter name="mobilename" value="nexusnode1"></parameter>
+		<parameter name="device" value="192.168.188.102:5555"></parameter>
 
-		<parameter name="platform_name" value="Android"></parameter>
-		<parameter name="platform_version" value="6.0.1"></parameter>
+		<parameter name="platform_name" value="ANDROID EMULATOR"></parameter>
+		<parameter name="platform_version" value="5.1"></parameter>
 		<parameter name="apk"
-			value="C:\\Users\\santhosh\\Downloads\\SHAREit\\SM-G935F\\app\\AJIO.apk"></parameter>
+			value="D:\\Android\\Ajio-Prod_1-21.apk"></parameter>
 
 		<classes>
 			<class name="com.appium.san.ajio.androidajio.TestLogin" />
 		</classes>
-	</test>
- -->
+	</test> -->
+ 
 
 
 	<!-- <test name="Real-Device-1"> <classes> <class name="com.mrmoin.appium.AppiumParallelTests"> 

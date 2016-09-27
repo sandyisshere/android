@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Smoke]" parallel="tests">
-  <parameter name="platform_version" value="6.0.1"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Smoke]" parallel="tests">
+  <parameter name="platform_version" value="6.0"/>
   <parameter name="port" value="4726"/>
-  <parameter name="platform_name" value="Android"/>
-  <parameter name="device" value="98857538485134424f"/>
+  <parameter name="platform_name" value="ANDROID"/>
+  <parameter name="device" value="192.168.209.101:5555"/>
   <parameter name="mobilename" value="san"/>
-  <parameter name="apk" value="C:\\Users\\santhosh\\Downloads\\SHAREit\\SM-G935F\\app\\AJIO1.apk"/>
+  <parameter name="apk" value="D:\\Android\\Ajio-Prod_1-2.apk"/>
+  <listeners>
+    <listener class-name="com.appium.factory.BaseExtent"/>
+  </listeners>
   <test name="Emulator-1(failed)" parallel="tests">
-    <parameter name="platform_version" value="6.0.1"/>
+    <parameter name="platform_version" value="6.0"/>
     <parameter name="port" value="4726"/>
-    <parameter name="platform_name" value="Android"/>
-    <parameter name="device" value="98857538485134424f"/>
+    <parameter name="platform_name" value="ANDROID"/>
+    <parameter name="device" value="192.168.209.101:5555"/>
     <parameter name="mobilename" value="san"/>
-    <parameter name="apk" value="C:\\Users\\santhosh\\Downloads\\SHAREit\\SM-G935F\\app\\AJIO1.apk"/>
+    <parameter name="apk" value="D:\\Android\\Ajio-Prod_1-2.apk"/>
     <classes>
       <class name="com.appium.san.ajio.androidajio.TestLogin">
         <methods>
-          <include name="testmethodLogin"/>
+          <include name="Verify_user_can_sign_into_the_app_with_an_existing_account"/>
+          <include name="initbefore"/>
+          <include name="teardown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.appium.san.ajio.androidajio.TestLogin -->

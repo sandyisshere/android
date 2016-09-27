@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Smoke">
-              <span class="suite-name border-skipped">Smoke</span>
+              <span class="suite-name border-passed">Smoke</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Smoke">
-                    <span>C:\Users\santhosh\git\android\testng.xml</span>
+                    <span>C:\Users\santhosh.baby\git\android\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Smoke" class="hide-methods skipped suite-Smoke"> (hide)</a> <!-- hide-methods skipped suite-Smoke -->
-                      <a href="#" panel-name="suite-Smoke" class="show-methods skipped suite-Smoke"> (show)</a> <!-- show-methods skipped suite-Smoke -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Smoke" class="hide-methods passed suite-Smoke"> (hide)</a> <!-- hide-methods passed suite-Smoke -->
+                      <a href="#" panel-name="suite-Smoke" class="show-methods passed suite-Smoke"> (show)</a> <!-- show-methods passed suite-Smoke -->
                     </span>
-                    <div class="method-list-content skipped suite-Smoke">
+                    <div class="method-list-content passed suite-Smoke">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Smoke" title="com.appium.san.ajio.androidajio.TestLogin" hash-for-method="testmethodLogin">testmethodLogin</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke" title="com.appium.san.ajio.androidajio.TestLogin" hash-for-method="Verify_user_can_sign_into_the_app_with_an_existing_account">Verify_user_can_sign_into_the_app_with_an_existing_account</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Smoke -->
+                    </div> <!-- method-list-content passed suite-Smoke -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,38 +116,41 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Smoke" class="panel Smoke">
-          <div class="suite-Smoke-class-skipped">
+          <div class="suite-Smoke-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.appium.san.ajio.androidajio.TestLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testmethodLogin">
-                  </a> <!-- testmethodLogin -->
-                  <span class="method-name">testmethodLogin</span>
+                  <a name="Verify_user_can_sign_into_the_app_with_an_existing_account">
+                  </a> <!-- Verify_user_can_sign_into_the_app_with_an_existing_account -->
+                  <span class="method-name">Verify_user_can_sign_into_the_app_with_an_existing_account</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Smoke-class-skipped -->
+          </div> <!-- suite-Smoke-class-passed -->
         </div> <!-- panel Smoke -->
         <div panel-name="test-xml-Smoke" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\santhosh\git\android\testng.xml</span>
+            <span class="header-content">C:\Users\santhosh.baby\git\android\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Smoke&quot; parallel=&quot;tests&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Smoke&quot; parallel=&quot;tests&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.appium.factory.BaseExtent&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test name=&quot;Emulator-1&quot;&gt;
-    &lt;parameter name=&quot;platform_version&quot; value=&quot;6.0.1&quot;/&gt;
+    &lt;parameter name=&quot;platform_version&quot; value=&quot;6.0&quot;/&gt;
     &lt;parameter name=&quot;port&quot; value=&quot;4726&quot;/&gt;
-    &lt;parameter name=&quot;platform_name&quot; value=&quot;Android&quot;/&gt;
-    &lt;parameter name=&quot;device&quot; value=&quot;98857538485134424f&quot;/&gt;
+    &lt;parameter name=&quot;platform_name&quot; value=&quot;ANDROID&quot;/&gt;
+    &lt;parameter name=&quot;device&quot; value=&quot;192.168.209.101:5555&quot;/&gt;
     &lt;parameter name=&quot;mobilename&quot; value=&quot;san&quot;/&gt;
-    &lt;parameter name=&quot;apk&quot; value=&quot;C:\\Users\\santhosh\\Downloads\\SHAREit\\SM-G935F\\app\\AJIO1.apk&quot;/&gt;
+    &lt;parameter name=&quot;apk&quot; value=&quot;D:\\Android\\Ajio-Prod_1-2.apk&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.appium.san.ajio.androidajio.TestLogin&quot;/&gt;
     &lt;/classes&gt;
@@ -191,14 +194,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testmethodLogin')
+data.setCell(0, 1, 'Verify_user_can_sign_into_the_app_with_an_existing_account')
 data.setCell(0, 2, 'com.appium.san.ajio.androidajio.TestLogin')
-data.setCell(0, 3, 1);
+data.setCell(0, 3, 40034);
 window.suiteTableData['Smoke']= { tableData: data, tableDiv: 'times-div-Smoke'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 ms</span>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
               <div id="times-div-Smoke">
               </div> <!-- times-div-Smoke -->
             </div> <!-- times-div -->
@@ -226,15 +229,21 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.appium.san.ajio.androidajio.TestLogin</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">setUp(4726, 98857538485134424f, Android, 6.0.1, san, C:\\Users\\santhosh\\Downloads\\SHAREit\\SM-G935F\\ap...)</span>
+                <span class="method-name">setUp(4726, 192.168.209.101:5555, ANDROID, 6.0, san, D:\\Android\\Ajio-Prod_1-2.apk)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">initbefore</span>
+                <span class="method-start">12651 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testmethodLogin</span>
-                <span class="method-start">11671 ms</span>
+                <span class="method-name">Verify_user_can_sign_into_the_app_with_an_existing_account</span>
+                <span class="method-start">28787 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">68825 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

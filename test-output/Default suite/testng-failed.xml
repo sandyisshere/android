@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
       <class name="com.appium.san.ajio.androidajio.TestLogin">
         <methods>
-          <include name="testmethodLogin"/>
+          <include name="Verify_user_can_sign_into_the_app_with_an_existing_account"/>
         </methods>
       </class> <!-- com.appium.san.ajio.androidajio.TestLogin -->
     </classes>

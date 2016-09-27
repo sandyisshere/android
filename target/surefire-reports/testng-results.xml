@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Smoke" duration-ms="41510" started-at="2016-09-12T18:04:03Z" finished-at="2016-09-12T18:04:45Z">
+  <suite name="Smoke" duration-ms="83927" started-at="2016-09-27T13:05:44Z" finished-at="2016-09-27T13:07:08Z">
     <groups>
     </groups>
-    <test name="Emulator-1" duration-ms="41510" started-at="2016-09-12T18:04:03Z" finished-at="2016-09-12T18:04:45Z">
+    <test name="Emulator-1" duration-ms="83927" started-at="2016-09-27T13:05:44Z" finished-at="2016-09-27T13:07:08Z">
       <class name="com.appium.san.ajio.androidajio.TestLogin">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.appium.san.ajio.androidajio.TestLogin@617c74e5]" name="setUp" is-config="true" duration-ms="14368" started-at="2016-09-12T23:34:03Z" finished-at="2016-09-12T23:34:18Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.appium.san.ajio.androidajio.TestLogin@38082d64]" name="setUp" is-config="true" duration-ms="19786" started-at="2016-09-27T18:35:44Z" finished-at="2016-09-27T18:36:04Z">
           <params>
             <param index="0">
               <value>
@@ -21,12 +21,12 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Android]]>
+                <![CDATA[ANDROID]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[6.0.1]]>
+                <![CDATA[6.0]]>
               </value>
             </param>
             <param index="4">
@@ -36,18 +36,44 @@
             </param>
             <param index="5">
               <value>
-                <![CDATA[C:\\Users\\santhosh\\Downloads\\SHAREit\\SM-G935F\\app\\AJIO1.apk]]>
+                <![CDATA[D:\\Android\\Ajio-Prod_1-2.apk]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testmethodLogin()[pri:0, instance:com.appium.san.ajio.androidajio.TestLogin@617c74e5]" name="testmethodLogin" duration-ms="26014" started-at="2016-09-12T23:34:18Z" finished-at="2016-09-12T23:34:44Z">
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.appium.san.ajio.androidajio.TestLogin@38082d64]" name="startTest" is-config="true" duration-ms="10" started-at="2016-09-27T18:36:04Z" finished-at="2016-09-27T18:36:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.appium.san.ajio.androidajio.TestLogin.Verify_pincode_check_in_PDP_and_cart() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testmethodLogin -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.appium.san.ajio.androidajio.TestLogin@617c74e5]" name="teardown" is-config="true" duration-ms="1108" started-at="2016-09-12T23:34:44Z" finished-at="2016-09-12T23:34:45Z">
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="Verify_pincode_check_in_PDP_and_cart()[pri:0, instance:com.appium.san.ajio.androidajio.TestLogin@38082d64]" name="Verify_pincode_check_in_PDP_and_cart" duration-ms="62819" started-at="2016-09-27T18:36:04Z" finished-at="2016-09-27T18:37:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_pincode_check_in_PDP_and_cart -->
+        <test-method status="PASS" signature="initbefore()[pri:0, instance:com.appium.san.ajio.androidajio.TestLogin@38082d64]" name="initbefore" is-config="true" duration-ms="0" started-at="2016-09-27T18:36:04Z" finished-at="2016-09-27T18:36:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initbefore -->
+        <test-method status="PASS" signature="afterTest(java.lang.reflect.Method)[pri:0, instance:com.appium.san.ajio.androidajio.TestLogin@38082d64]" name="afterTest" is-config="true" duration-ms="10" started-at="2016-09-27T18:37:07Z" finished-at="2016-09-27T18:37:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.appium.san.ajio.androidajio.TestLogin.Verify_pincode_check_in_PDP_and_cart() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.appium.san.ajio.androidajio.TestLogin@38082d64]" name="teardown" is-config="true" duration-ms="1282" started-at="2016-09-27T18:37:07Z" finished-at="2016-09-27T18:37:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
