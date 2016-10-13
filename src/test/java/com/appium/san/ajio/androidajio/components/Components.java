@@ -1,3 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Santhosh.Baby
+ */
 package com.appium.san.ajio.androidajio.components;
 
 import java.util.HashMap;
@@ -19,13 +25,21 @@ import com.appium.pages.HomePage;
 import com.appium.pages.LoginPage;
 import com.appium.pages.PDPPage;
 import com.appium.pages.SearchPage;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import com.san.appium.sandriver.TestBase;
 import com.san.appium.sandriver.WaitEvent;
 
 public class Components extends TestBase {
 
+	ExtentTest test;
+
+	public Components(AndroidDriver driver, ExtentTest test) throws Exception {
+		this.driver = driver;
+		this.test = test;
+	}
+
 	public Components(AndroidDriver driver) throws Exception {
-		System.out.println("uuuuuuuuuuuuu");
 		this.driver = driver;
 		// we = new WaitEvent(driver);
 
@@ -34,7 +48,6 @@ public class Components extends TestBase {
 
 	public void navigatetologin() throws Exception {
 		try {
-
 			click(LoginPage.accounttab, 30);
 			click(LoginPage.signin, 30);
 		} catch (Exception e) {
@@ -44,9 +57,10 @@ public class Components extends TestBase {
 
 	}
 
-	public void login() throws Exception {
-		setValue(By.id("com.ril.ajio:id/txt_email"), "santhosh.baby@ril.com");
-		setValue(By.id("com.ril.ajio:id/txt_password"), "test@321");
+	public void login(String username, String password) throws Exception {
+
+		setValue(By.id("com.ril.ajio:id/txt_email"), username);
+		setValue(By.id("com.ril.ajio:id/txt_password"), password);
 		click(By.id("com.ril.ajio:id/login_button"));
 		/*
 		 * // driver.findElementByAndroidUIAutomator( //
@@ -65,10 +79,11 @@ public class Components extends TestBase {
 	public Boolean assertlogin() throws Exception {
 		WaitEvent we1 = new WaitEvent(driver, 40);
 		String text = we1.waitForElement(By.id("com.ril.ajio:id/toolbar_title")).getText();
-		System.out.println(text);
 		if (text.equals("My Account")) {
+			test.log(LogStatus.PASS, "Account  logged in");
 			return true;
 		} else {
+			test.log(LogStatus.FAIL, "Account  failed to login");
 			return false;
 		}
 
@@ -113,15 +128,18 @@ public class Components extends TestBase {
 
 	public void AssertenteredAdress(String name) throws Exception {
 		String text = webElement(By.xpath("//android.widget.TextView[contains(@text,'" + name + "')]")).getText();
-		System.out.println(text);
 		if (!text.contains(name)) {
+			test.log(LogStatus.FAIL, "Address Validated");
+			takeScreenShot();
 			Assert.fail("Address addition fail");
+		} else {
+			test.log(LogStatus.PASS, "Address Validated");
 		}
 	}
 
 	public void editAddress(String addrs) throws Exception {
+		click(AccountPage.account_addressbook);
 		click(AccountPage.editAddress);
-
 		setValue(AccountPage.addressline1, addrs);
 		driver.scrollTo("SAVE");
 		click(AccountPage.saveaddress);
@@ -149,13 +167,18 @@ public class Components extends TestBase {
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
+		test.log(LogStatus.INFO, "click hometab");
+
 		click(CommonPages.hometab);
+		test.log(LogStatus.INFO, "MEN collection");
 		navigatetocollection("MEN");
+
 		/*
 		 * click(CommonPages.searchicon); setValue(CommonPages.searchicontext,
 		 * attr);
 		 * driver.findElement(CommonPages.searchicontext).sendKeys(Keys.ENTER);
 		 */
+		test.log(LogStatus.INFO, "ADD PRODUCT");
 		click(SearchPage.product);
 		driver.scrollTo("SELECT SIZE");
 		/*
@@ -164,20 +187,22 @@ public class Components extends TestBase {
 		 * findElements.get(0).click();
 		 */click(PDPPage.selectsize);
 		// click(PDPPage.selectsize);
+		test.log(LogStatus.INFO, "Add to cart");
 		click(PDPPage.addtobag);
 
 	}
 
 	public void deletecart() throws Exception {
-		
-		click(CommonPages.carttab);
-		click(CartPage.remove);
-		click(CartPage.yes);
-	  	
-   
+		try {
+			click(CommonPages.carttab);
+			click(CartPage.remove);
+			click(CartPage.yes);
+		} catch (Exception e) {
+
+		}
+
 	}
 
-	
 	public void verifymyaccounttab(String val) throws Exception {
 
 		navigatemyaccounttab(val);
@@ -204,7 +229,7 @@ public class Components extends TestBase {
 
 	}
 
-	public  void orderplacement() {
+	public void orderplacement() {
 
 	}
 }

@@ -2,14 +2,16 @@ com\san\appium\sandriver\SelBase.class
 com\appium\pages\PDPPage.class
 com\appium\pages\OrderSummaryPage.class
 com\san\appium\sandriver\WaitEvent.class
+com\appium\factory\AjioConstants.class
 com\appium\pages\MyBag.class
 com\san\appium\sandriver\TestBase.class
 com\appium\pages\SearchPage.class
+com\appium\factory\ExtentManager.class
 com\appium\pages\AccountPage.class
 com\appium\pages\CartPage.class
 com\appium\pages\CommonPages.class
 com\appium\pages\HomePage.class
 com\appium\pages\ClosetPage.class
 com\appium\san\ajio\androidajio\components\Components.class
-com\appium\san\ajio\androidajio\TestLogin.class
+com\appium\san\ajio\androidajio\SmokeTest.class
 com\appium\pages\LoginPage.class

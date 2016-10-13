@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Emulator-1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/13</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 27 18:35:44 IST 2016</td>
+<td>Started on:</td><td>Thu Oct 13 16:36:52 IST 2016</td>
 </tr>
-<tr><td>Total time:</td><td>83 seconds (83927 ms)</td>
+<tr><td>Total time:</td><td>6 seconds (6253 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,18 +67,364 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.appium.san.ajio.androidajio.TestLogin.Verify_pincode_check_in_PDP_and_cart()'><b>Verify_pincode_check_in_PDP_and_cart</b><br>Test class: com.appium.san.ajio.androidajio.TestLogin</td>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.setUp()'><b>setUp</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest<br>Parameters: 4726, 98857538485134424f, ANDROID, 6.0, san, D:\\Android\\Ajio-Prod_1-2.apk</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Bad app: D:\Android\Ajio-Prod_1-2.apk. App paths need to be absolute, or relative to the appium server install dir, or a URL to compressed file, or a special app name. cause: Error: Error locating the app: ENOENT: no such file or directory, stat &apos;D:\Android\Ajio-Prod_1-2.apk&apos;) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 423 milliseconds
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
+System info: host: &apos;LT0062160&apos;, ip: &apos;169.254.53.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:129)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:161)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:170)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:82)
+	at com.san.appium.sandriver.TestBase.setUp(TestBase.java:94)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace67790718", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace67790718'><pre>org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Bad app: D:\Android\Ajio-Prod_1-2.apk. App paths need to be absolute, or relative to the appium server install dir, or a URL to compressed file, or a special app name. cause: Error: Error locating the app: ENOENT: no such file or directory, stat &apos;D:\Android\Ajio-Prod_1-2.apk&apos;) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 423 milliseconds
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
+System info: host: &apos;LT0062160&apos;, ip: &apos;169.254.53.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:129)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:161)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:170)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:82)
+	at com.san.appium.sandriver.TestBase.setUp(TestBase.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:647)
+	at org.testng.TestRunner.run(TestRunner.java:615)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.startTest()'><b>startTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
 <td></td>
-<td>62</td>
-<td>com.appium.san.ajio.androidajio.TestLogin@38082d64</td></tr>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.initbefore()'><b>initbefore</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.startTest()'><b>startTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.initbefore()'><b>initbefore</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.startTest()'><b>startTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.initbefore()'><b>initbefore</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.startTest()'><b>startTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.initbefore()'><b>initbefore</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.startTest()'><b>startTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.initbefore()'><b>initbefore</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.startTest()'><b>startTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.initbefore()'><b>initbefore</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.startTest()'><b>startTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.initbefore()'><b>initbefore</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.startTest()'><b>startTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.initbefore()'><b>initbefore</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.startTest()'><b>startTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.initbefore()'><b>initbefore</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.startTest()'><b>startTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.initbefore()'><b>initbefore</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.startTest()'><b>startTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.initbefore()'><b>initbefore</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.startTest()'><b>startTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.initbefore()'><b>initbefore</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.startTest()'><b>startTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.initbefore()'><b>initbefore</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.afterTest()'><b>afterTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.afterTest()'><b>afterTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.afterTest()'><b>afterTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.afterTest()'><b>afterTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.afterTest()'><b>afterTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.afterTest()'><b>afterTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.afterTest()'><b>afterTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.afterTest()'><b>afterTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.afterTest()'><b>afterTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.afterTest()'><b>afterTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.afterTest()'><b>afterTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.afterTest()'><b>afterTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.afterTest()'><b>afterTest</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.teardown()'><b>teardown</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.Add_Remove_feature_in_cart()'><b>Add_Remove_feature_in_cart</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.Verify_Add_New_Delivery_Address()'><b>Verify_Add_New_Delivery_Address</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.Verify_Home_screen_contents_navigation_to_other_screens()'><b>Verify_Home_screen_contents_navigation_to_other_screens</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.Verify_PDP_screen_adding_product()'><b>Verify_PDP_screen_adding_product</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.Verify_edit_address()'><b>Verify_edit_address</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.Verify_my_account_screen()'><b>Verify_my_account_screen</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.Verify_offer_tag_appears_in_PLP()'><b>Verify_offer_tag_appears_in_PLP</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.Verify_pincode_check_in_PDP_and_cart()'><b>Verify_pincode_check_in_PDP_and_cart</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.Verify_promo_msgs_in_PDP()'><b>Verify_promo_msgs_in_PDP</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.Verify_user_can_see_shop_the_look_capsule_on_PDP()'><b>Verify_user_can_see_shop_the_look_capsule_on_PDP</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.Verify_user_can_sign_into_the_app_with_an_existing_account()'><b>Verify_user_can_sign_into_the_app_with_an_existing_account</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.Verify_when_no_items_in_cart_closet()'><b>Verify_when_no_items_in_cart_closet</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
+<tr>
+<td title='com.appium.san.ajio.androidajio.SmokeTest.place_order()'><b>place_order</b><br>Test class: com.appium.san.ajio.androidajio.SmokeTest</td>
+<td></td>
+<td>0</td>
+<td>com.appium.san.ajio.androidajio.SmokeTest@954b04f</td></tr>
 </table><p>
 </body>
 </html>

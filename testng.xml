@@ -14,7 +14,7 @@
 		<parameter name="apk"
 			value="D:\\Android\\Ajio-Prod_1-2.apk"></parameter>
 		<classes>
-			<class name="com.appium.san.ajio.androidajio.TestLogin" />
+			<class name="com.appium.san.ajio.androidajio.SmokeTest" />
 		</classes>
 	</test> 
 	

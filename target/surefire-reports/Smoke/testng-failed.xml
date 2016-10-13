@@ -15,16 +15,24 @@
     <parameter name="mobilename" value="san"/>
     <parameter name="apk" value="D:\\Android\\Ajio-Prod_1-2.apk"/>
     <classes>
-      <class name="com.appium.san.ajio.androidajio.TestLogin">
+      <class name="com.appium.san.ajio.androidajio.SmokeTest">
         <methods>
-          <include name="Verify_user_can_see_shop_the_look_capsule_on_PDP"/>
-          <include name="initbefore"/>
-          <include name="startTest"/>
-          <include name="afterTest"/>
-          <include name="teardown"/>
+          <include name="Verify_when_no_items_in_cart_closet"/>
+          <include name="Add_Remove_feature_in_cart"/>
+          <include name="Verify_Add_New_Delivery_Address"/>
+          <include name="Verify_Home_screen_contents_navigation_to_other_screens"/>
+          <include name="Verify_my_account_screen"/>
           <include name="setUp"/>
+          <include name="Verify_offer_tag_appears_in_PLP"/>
+          <include name="Verify_pincode_check_in_PDP_and_cart"/>
+          <include name="Verify_user_can_see_shop_the_look_capsule_on_PDP"/>
+          <include name="place_order"/>
+          <include name="Verify_PDP_screen_adding_product"/>
+          <include name="Verify_edit_address"/>
+          <include name="Verify_user_can_sign_into_the_app_with_an_existing_account"/>
+          <include name="Verify_promo_msgs_in_PDP"/>
         </methods>
-      </class> <!-- com.appium.san.ajio.androidajio.TestLogin -->
+      </class> <!-- com.appium.san.ajio.androidajio.SmokeTest -->
     </classes>
   </test> <!-- Emulator-1(failed) -->
 </suite> <!-- Failed suite [Smoke] -->
